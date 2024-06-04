@@ -110,20 +110,6 @@ public ServerResponse updateKuaidinumById(ServerRequest serverRequest) {
 
 
 
-## 性能压测
-
-CPU:8核，内存:15G   
-同时部署应用和数据库`PostgreSQL`。应用配置了10G堆内存，数据库配置了4G的Buffer Pool。   
-执行语句：`SELECT FEXPID,FDBID,FTRADETIME,FSOURCE FROM T_MKT_EXPRESS WHERE FEXPID = ?`
-
-![img.png](img/img.png)
-
-执行语句：`SELECT FEXPID,FDBID,FTRADETIME,FSOURCE FROM T_MKT_EXPRESS WHERE FDBID = ? LIMIT ? OFFSET ?`
-
-![img_1.png](img/img_1.png)
-
-
-
 
 ## WEB框架使用指南
 ### 配置WEB服务
